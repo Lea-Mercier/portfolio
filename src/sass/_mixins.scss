@@ -2,17 +2,12 @@
     font-family: 'Inter';
     font-weight: 600;
     font-size: 11rem;
-}
 
-
-@media screen and (min-width: 768px) {
-    @mixin grosTitre{
+    @media screen and (max-width: 768px){
         font-size: 8rem;
     }
-}
 
-@media screen and (min-width: 576px) {
-    @mixin grosTitre{
+    @media screen and (max-width: 576px){
         font-size: 6rem;
     }
 }
