@@ -37,4 +37,8 @@
         align-content: flex-end;
         flex-wrap: wrap;
     }
+
+    .roles-wrapper {
+        transition: display 0.5s ease-in-out;
+    }
 }
