@@ -1,20 +1,40 @@
-
 /* Regles generales */
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100% !important;
+  overflow-x : hidden !important;
+}
 
-
-a, a:hover, a:visited{                /* ATTENTION LES LIENS SONT BLANC DANS CE MODELE*/
+a, a:hover, a:visited { /* ATTENTION LES LIENS SONT BLANC DANS CE MODELE*/
   color: #FFF;
   text-decoration: none;
 }
-img{
-  max-width:100%;
+
+img {
+  max-width: 100%;
   height: auto;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
+.w-50 {
+  width: 50%;
+}
 
+.w-fit-content {
+  width: fit-content;
+}
 
+.w-max-content {
+  width: max-content;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.min-w-50 {
+  min-width: 50%;
+}

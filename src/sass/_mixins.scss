@@ -4,3 +4,15 @@
     font-size: 11rem;
 }
 
+
+@media screen and (min-width: 768px) {
+    @mixin grosTitre{
+        font-size: 8rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    @mixin grosTitre{
+        font-size: 6rem;
+    }
+}
