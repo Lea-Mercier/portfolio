@@ -1,14 +1,14 @@
 .header {
     background-color: $noir;
     height: 100vh;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
 
     @media screen and (min-width: 768px){
-        padding: 1rem 4rem;
+        padding: 0 4rem;
     }
 
     .arrow-wrapper {
@@ -44,13 +44,5 @@
 
     .roles-wrapper {
         transition: display 0.5s ease-in-out;
-    }
-}
-
-nav {
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
     }
 }
