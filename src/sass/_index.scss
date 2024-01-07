@@ -56,8 +56,13 @@ nav {
     }
 }
 
+.nav{
+    height: 100vh;
+}
+
 .nav-link{
-
-    color: black;
-
+    padding: 30px 0px;
+    color: black!important;
+    border: black solid 1px;
+    width: 100%;
 }
