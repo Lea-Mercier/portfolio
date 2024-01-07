@@ -14,19 +14,23 @@ $(document).ready(function () {
     }, 3000);
 
 
-    var navbar = document.getElementsByClassName("navbar");
-    var $navbar = $(navbar);
-    var sticky = navbar.offsetTop;
+    const navbar = document.getElementsByClassName("navbar");
+    const $navbar = $(navbar);
+    const sticky = navbar.offsetTop;
 
-    window.onscroll = function() {myFunction($navbar, sticky)};
+    document.addEventListener('scroll', function (event) {
+        const scroll = $(document).scrollTop();
+        myFunction($navbar, sticky, scroll);
+    }, true);
 });
 
-function myFunction($navbar, sticky) {
-    if (window.pageYOffset >= sticky) {
+function myFunction($navbar, sticky, scroll) {
+    if (scroll>= sticky) {
         $navbar.addClass("sticky")
         console.log('sticky')
     } else {
-        $navbar.removeClasse("sticky")
+        $navbar.removeClass("sticky")
         console.log('pas sticky')
     }
+    console.log(scroll, sticky)
 }
