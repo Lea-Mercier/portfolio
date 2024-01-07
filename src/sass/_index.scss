@@ -1,7 +1,7 @@
 .header {
     background-color: $noir;
     height: 100vh;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,6 +27,7 @@
     .header__titre {
         @include grosTitre;
         color: $blanc;
+        font-family: "Lato"
     }
 
     .header__titre--violet {
@@ -53,4 +54,10 @@ nav {
         top: 0;
         width: 100%;
     }
+}
+
+.nav-link{
+
+    color: black;
+
 }
