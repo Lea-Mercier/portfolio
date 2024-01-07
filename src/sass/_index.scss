@@ -66,3 +66,44 @@ nav {
     border: black solid 1px;
     width: 100%;
 }
+
+.card {
+    position: relative;
+    transition: all .5s ease-in;
+    width:406px;
+    height: 426px;
+ }
+  
+ .card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+ .card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: none;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .card:hover .card__overlay {
+    opacity: 1;
+  }
+
+  .card-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
